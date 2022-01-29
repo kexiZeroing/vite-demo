@@ -1,11 +1,11 @@
-## Learn the new frontend build tool Vite
+# Learn the new frontend build tool Vite
 
 > Refer to https://www.youtube.com/watch?v=UJypSr8IhKY
 
 [Vite](https://vitejs.dev/) consists of two major parts:
 - A dev server that serves your source files over native ES modules, with rich built-in features and astonishingly fast Hot Module Replacement (HMR).
 
-  > `esbuild`, which is written in Go and very fast, does the transpile things transforming into plain javascript. It will process and prebundle the dependencies into something works in the browser as native es-module. `vite --force` means that ignore the dependency cache and reforce to process all the dependencies.
+  > `esbuild`, which is written in Go and very fast, does the transpile things transforming into plain javascript. It will process and prebundle the dependencies into something works in the browser as native es-module. `vite --force` will ignore the dependency cache and reforce to process all the dependencies.
 
 - A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production. (Rollup is a more battle-tested choice in bundling applications)
  
@@ -17,7 +17,7 @@
 3. Create an `index.html` file, and it is the entry point for the whole application
 4. Add a `"dev": "vite"` script in `package.json`
 5. Run `npm run dev` and the `index.html` is serverd
-6. When you debug with Vite, just looking at the network tab and every module is a request here because it doesn't concatenate everything.
+6. When you debug with Vite, just looking at the network tab and **every module is a request here because it doesn't concatenate everything**.
 7. For build and preview, add `"build": "vite build"` for production build, then `"serve": "vite preview"` to serve the `dist` directory we built.
 
 <img alt="vite build" src="https://tva1.sinaimg.cn/large/008i3skNly1gyuj8fvytaj30s80dsq4u.jpg" width="500">
