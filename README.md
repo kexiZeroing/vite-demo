@@ -11,7 +11,7 @@
  
 --- 
 
-#### Development
+### Development
 1. Make a new directroy `vite-demo`
 2. Run `yarn add -D vite`
 3. Create an `index.html` file, and it is the entry point for the whole application
@@ -23,20 +23,22 @@
 <img alt="vite build" src="https://tva1.sinaimg.cn/large/008i3skNly1gyuj8fvytaj30s80dsq4u.jpg" width="500">
 <img alt="vite preview" src="https://tva1.sinaimg.cn/large/008i3skNly1gyujc8lngoj30j00a23z9.jpg" width="500">
 
-#### Use tailwind CSS https://tailwindcss.com/docs/guides/vite
+### Use tailwind CSS
+https://tailwindcss.com/docs/guides/vite
+
 1. Install tailwind `yarn add -D tailwindcss postcss autoprefixer`
 2. Run `npx tailwindcss init -p`, which will create `tailwind.config.js` and `postcss.config.js`
 3. Add `@tailwind` directives in the css file
 
-#### Use sass
+### Use sass
 1. Install `yarn add -D sass`
 2. Create a `.scss` file and import that in the `index.html`
 
-#### Use React
+### Use React
 1. Install `yarn add react react-dom`
 2. Create a `jsx` file that import React and render something
 3. `typescript`, `jsx`, `tsx` works out of the box
 
-#### Scaffolding the Vite project
+### Scaffolding the Vite project
 1. `npm init vite@latest` and follow the prompts
 2. You can also directly specify the project name and the template you want to use: `npm init vite@latest project-name --template vue` (or vue-ts, react, react-ts...)
